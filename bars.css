@@ -1,0 +1,34 @@
+* { margin: 0; padding: 0; }
+
+.bar-container {
+	display: flex;
+	flex-direction: row;
+}
+
+.bar-container.full {
+	height: 100vh;
+}
+
+.bar-container.top {
+	height: 66.6666666666666666666666666666666666666666666vh;
+}
+
+.bar-container > .bar {
+	flex: 1 0 auto;
+}
+
+.rgb > .bar.white { background-color: #ffffff; }
+.rgb > .bar.yellow { background-color: #ffff00; }
+.rgb > .bar.cyan { background-color: #00ffff; }
+.rgb > .bar.green { background-color: #00ff00; }
+.rgb > .bar.magenta { background-color: #ff00ff; }
+.rgb > .bar.red { background-color: #ff0000; }
+.rgb > .bar.blue { background-color: #0000ff; }
+
+.analog > .bar.white { background-color: hsl(0, 0.0%, 75%); }
+.analog > .bar.yellow { background-color: hsl(60, 100.0%, 75%); }
+.analog > .bar.cyan { background-color: hsl(180, 100.0%, 75%); }
+.analog > .bar.green { background-color: hsl(120, 100.0%, 75%); }
+.analog > .bar.magenta { background-color: hsl(90, 100.0%, 75%); }
+.analog > .bar.red { background-color: hsl(90, 100.0%, 75%); }
+.analog > .bar.blue { background-color: hsl(90, 100.0%, 75%); }
